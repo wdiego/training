@@ -1,0 +1,50 @@
+<page-header></page-header>
+<div class="register-form">
+    <form data-toggle="validator">
+        <h3>New Event</h3>
+        <div class="form-group">
+            <label for="name">Event Name *</label>
+            <input [(ngModel)]="model.name" id="name" class="form-control" type="name" name="name" autocomplete="on" data-msg-required="Please enter your name." placeholder="Name of your event" required>
+        </div>
+        <div class="form-group">
+            <label for="event_type">Event Type *</label>
+            <input list="event_type" class="form-control" type="text" name="event_type" placeholder="birthday party, conference talk, wedding" required>
+            <datalist id="event_type">
+                <option value="Birthday Party">
+                <option value="Conference Talk">
+                <option value="Wedding">
+            </datalist>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputAmount">Start Date *</label>
+            <div class="input-group">
+                <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                <input [(ngModel)]="model.start_datetime" type="datetime-local" class="form-control col-xs-3" id="exampleInputAmount" placeholder="mm/dd/yyyy (optional)" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputAmount">End Date *</label>
+            <div class="input-group">
+                <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                <input [(ngModel)]="model.end_datetime" type="datetime-local" class="form-control col-xs-3" id="exampleInputAmount" placeholder="mm/dd/yyyy (optional)" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="password">Location</label>
+            <input [(ngModel)]="model.location" id="location" class="form-control" type="text" name="location" placeholder="Location of the event">
+        </div>
+        <div class="form-group">
+            <label for="password">Event Host</label>
+            <input [(ngModel)]="model.host" id="host" class="form-control" type="text" name="host" placeholder="Organization or an individual name">
+        </div>
+        <div class="form-group">
+            <label for="guest_list">Guest List</label>
+            <textarea [(ngModel)]="model.guest_list" id="guest_list" class="form-control" placeholder="Type the participants list of your event"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="additional_information">Additional Information</label>
+            <textarea [(ngModel)]="model.additional_info" id="additional_information" class="form-control" placeholder="Type additional informations about your event"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Save</button>
+    </form>
+</div>

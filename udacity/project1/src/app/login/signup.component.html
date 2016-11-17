@@ -1,0 +1,55 @@
+<div class="signup">
+    <div class="signup-body">
+        <div class="logo">
+            <i class="fa fa-clock-o fa-2x" aria-hidden="true"></i>
+            <span>My Planner</span>
+        </div>
+        <h3 class="signup-heading">Sign Up</h3>
+        <div class="signup-divider">
+            <div class="divider">
+            </div>
+        </div>
+        <div class="signup-form">
+            <form data-toggle="validator">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input id="name" class="form-control" type="name" name="name" spellcheck="false" autocomplete="off" data-msg-required="Please enter your name." placeholder="Your complete name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input id="email" class="form-control" type="email" name="email" spellcheck="false" autocomplete="off" data-msg-required="Please enter your email address." placeholder="example@myplanner.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password *</label>
+                    <input id="password" class="form-control" type="password" name="password" minlength="6" data-msg-minlength="Password must be 6 characters or more." data-msg-required="Please enter your password." placeholder="Type a secure password" required>
+                    <small class="help-block">6-character minimum; case sensitive.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputAmount">Birthday</label>
+                    <div class="input-group">
+                        <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                        <input type="date" class="form-control col-xs-3" id="exampleInputAmount" placeholder="mm/dd/yyyy (optional)">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label style="display: block">Gender</label>
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Female
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Male
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputAmount">Employer</label>
+                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="Company you work for (optional)">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputAmount">Job Title</label>
+                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="Teacher, engineer, ... (optional)">
+                </div>
+                <a class="btn btn-primary btn-block" href="/dashboard">Sign Up</a>
+            </form>
+        </div>
+    </div>
+</div>

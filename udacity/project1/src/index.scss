@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+    color: #777;
+    background-color: #f1f1f1;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.logo span {
+    font-size: 2em;
+    margin-left: 8px;
+    font-family: 'Lobster', cursive;
+}

@@ -1,0 +1,46 @@
+.dashboard-header {
+    background-color: #777;
+    height: 65px;
+}
+
+.dashboard-logo {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 15px;
+    color: #f2f2f2;
+}
+
+.dashboard-logo span {
+    font-size: 2em;
+    margin-left: 8px;
+    font-family: 'Lobster', cursive;
+}
+
+.menu {
+    padding: 0px;
+    background-color: #eaeaea;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    display: inline-block;
+    color: #777;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    color: #35bce5;
+    cursor: pointer;
+}

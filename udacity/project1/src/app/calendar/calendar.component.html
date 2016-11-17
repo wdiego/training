@@ -1,0 +1,37 @@
+<div id="calendar">
+    <div class="header">
+        <div class="left" (click)="changeMonth(beforeMonth)"></div>
+        <h1>{{calMonthYear}} {{texto}}</h1>
+        <div class="right" (click)="changeMonth(nextMonth)"></div>
+    </div>
+    <div class="month in prev">
+
+        <div *ngFor="let calWeek of calWeeks" class="week">
+            <div *ngFor="let calDay of calWeek.days" [ngClass]="setDayClasses(calDay.date)" (click)="dayClick(calDay.date, calDay.column, calWeek.row)">
+                <div class="day-name">{{calDay.weekDay}}</div>
+                <div class="day-number">{{calDay.day}}</div>
+                <div class="day-events" *ngIf="calDay.events.length > 0">
+                    <span *ngFor="let event of calDay.events" class="{{event.type.color}}"></span>
+                </div>
+            </div>
+
+            <div class="details in" *ngIf="calWeek.showEvents">
+                <div class="arrow" [style.left]="eventArrowPos"></div>
+                <div class="events in">
+                    <div class="event">
+                        <div class="event-category yellow"></div>
+                        <span>Pick up from Soccer Practice</span>
+                    </div>
+                    <div class="event">
+                        <div class="event-category yellow"></div>
+                        <span>Pick up from Soccer Practice</span>
+                    </div>
+                    <div class="event">
+                        <div class="event-category yellow"></div>
+                        <span>Pick up from Soccer Practice</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
